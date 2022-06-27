@@ -1,0 +1,17 @@
+2022-01-15 01:01:09 [ERROR] - DB error [user]
+ 	INSERT INTO user (user_id, name, department, grade, phone,jwt_token ,grad_yn, addr)
+        VALUES('20171302', '홍우성', '컴퓨터공학부','3'
+        , '010-4143-1174','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVFVERU5UX0lEIjoiMjAxNzEzMDIiLCJOTSI6Iu2ZjeyasOyEsSIsIkRFUFRfTk0iOiLsu7Ttk6jthLDqs7XtlZnrtoAiLCJTQ0hZUiI6IjMiLCJpYXQiOjE2NDIxNzYwNjksImV4cCI6MTY0MzM4NTY2OSwiaXNzIjoiSE9TRU9OT1RJQ0UifQ.8ge2YLW160HoQPdF8s2yk2v-t1FZ5AWf46tE9ZULuNE','N', '충청남도 천안시 서북구 시청로 39,(불당동 대동다숲아파트) 108동 901호') ON DUPLICATE KEY 
+        UPDATE user_id='20171302', name='홍우성',
+                department='컴퓨터공학부', grade='3', phone='010-4143-1174','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVFVERU5UX0lEIjoiMjAxNzEzMDIiLCJOTSI6Iu2ZjeyasOyEsSIsIkRFUFRfTk0iOiLsu7Ttk6jthLDqs7XtlZnrtoAiLCJTQ0hZUiI6IjMiLCJpYXQiOjE2NDIxNzYwNjksImV4cCI6MTY0MzM4NTY2OSwiaXNzIjoiSE9TRU9OT1RJQ0UifQ.8ge2YLW160HoQPdF8s2yk2v-t1FZ5AWf46tE9ZULuNE', 
+                grad_yn='N', addr='충청남도 천안시 서북구 시청로 39,(불당동 대동다숲아파트) 108동 901호';
+ 	Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVFVERU5UX0lEIjoiMjAxNzEzMDIiLCJOTSI...' at line 5
+2022-01-15 01:52:22 [ERROR] - DB error [user]
+ 	INSERT INTO user (user_id, name, department, grade, phone, level ,grad_yn, addr)
+        VALUES('123', '테스트2', '테스트2','교직원'
+        , '123-123-123', 9,'N', '충청남도 천안시 서북구 시청로 39,(불당동 대동다숲아파트) 108동 901호') ON DUPLICATE KEY 
+        UPDATE user_id='123', name='테스트2',
+                department='테스트2', grade='교직원', phone='123-123-123', 9, 
+                grad_yn='N', addr='충청남도 천안시 서북구 시청로 39,(불당동 대동다숲아파트) 108동 901호';
+ 	Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '9, 
+                grad_yn='N', addr='충청남도 천안시 서북구 시...' at line 5
