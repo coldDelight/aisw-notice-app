@@ -1,5 +1,0 @@
-2022-01-17 18:38:42 [ERROR] - DB error [user_agreement]
- 	INSERT INTO user_agreement (user_id, agreement_id, checked_date) 
-        VALUES ('20171302', '1', '2022-01-17 18:38:42') ON DUPLICATE KEY 
-        UPDATE user_id='20171302', agreement_id='1', checked_data='2022-01-17 18:38:42'
- 	Error: ER_BAD_FIELD_ERROR: Unknown column 'checked_data' in 'field list'
